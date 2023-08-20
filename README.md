@@ -22,10 +22,10 @@ CREATE TABLE user (
 );
 ```
 
-3. Create the `transaction` table with the following SQL query:
+3. Create the `transactions` table with the following SQL query:
 
 ```sql
-CREATE TABLE transaction (
+CREATE TABLE transactions (
   id INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT NOT NULL,
   type ENUM('income', 'expense') NOT NULL,
