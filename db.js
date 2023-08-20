@@ -1,10 +1,12 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: 'containers-us-west-31.railway.app',
+  port: '6516',
   user: 'root',
-  password: 'zd2108',
-  database: 'szmbanking'
+  password: 'R9zMFeuawSFwyylXhHGz',
+  database: 'railway',
+  insecureAuth: true
 });
 
 db.connect(err => {
