@@ -73,7 +73,7 @@ const db = mysql.createConnection({
 
 1. Syntax for creating the database table (User and Transaction tables):
 
-   ![Table](pic/server.png)
+   ![Table](pic/tables.png)
 
 2. Successfully connecting the database to Node.js locally:
 
