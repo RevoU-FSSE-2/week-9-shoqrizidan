@@ -46,7 +46,7 @@ const db = mysql.createConnection({
   port: 'your-mysql-port',
   user: 'your-mysql-user',
   password: 'your-mysql-password',
-  database: 'your-database',
+  database: 'your-database'
 });
 
 // ...
