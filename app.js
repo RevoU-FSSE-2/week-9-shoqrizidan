@@ -6,11 +6,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const db = mysql.createConnection({
-  host: 'containers-us-west-139.railway.app',
-  port: '5623',
+  host: 'localhost',
   user: 'root',
-  password: 'SrvhG1cAuTZY2olSb6yg',
-  database: 'railway'
+  password: 'zd2108',
+  database: 'szmbanking'
 });
 
 app.use(bodyParser.json());
@@ -21,7 +20,7 @@ db.connect(err => {
 });
 
 app.get('/', (req, res) => {
-  res.send('MBanking App API');
+  res.send('Shoqri Zidan MBanking App API Week 9');
 });
 
 // Get user information with balance and total expenses
